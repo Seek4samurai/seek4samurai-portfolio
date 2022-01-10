@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components"
 import { lightTheme } from "./components/themes"
 import { Route, Switch } from "react-router-dom"
 
-// Componenets
+// Componenets imported for routing
 import main from "./components/main"
 import about from "./components/about"
 import blog from "./components/blog"
