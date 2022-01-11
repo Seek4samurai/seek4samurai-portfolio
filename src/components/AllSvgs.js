@@ -1,6 +1,6 @@
 // All SVG Components here boy!
 
-export const PowerBtn = (props) => {
+export const HomeBtn = (props) => {
   return (
     <svg
       aria-hidden="true"

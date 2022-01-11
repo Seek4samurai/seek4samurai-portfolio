@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import PowerButton from '../subComponents/powerButton'
+import HomeButton from '../subComponents/homeButton'
 
 const MainContainer = styled.div`
   position: relative;
@@ -22,7 +22,7 @@ const main = () => {
   return (
     <MainContainer>
       <Container>
-        <PowerButton></PowerButton>
+        <HomeButton></HomeButton>
       </Container>
     </MainContainer>
   )
