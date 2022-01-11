@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import HomeButton from '../subComponents/homeButton'
+import LogoComp from '../subComponents/LogoComp'
 
 const MainContainer = styled.div`
   position: relative;
@@ -23,6 +24,7 @@ const main = () => {
     <MainContainer>
       <Container>
         <HomeButton></HomeButton>
+        <LogoComp></LogoComp>
       </Container>
     </MainContainer>
   )
