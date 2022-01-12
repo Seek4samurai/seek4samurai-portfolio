@@ -16,6 +16,7 @@ const Logo = styled.h1`
 
   i{
     font-weight: 300;
+    font-size: 26px;
   }
 `
 

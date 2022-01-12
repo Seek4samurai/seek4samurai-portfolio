@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/" component={main}></Route>
         <Route exact path="/about" component={about}></Route>
         <Route exact path="/blog" component={blog}></Route>
-        <Route exact path="/work" component={works}></Route>
+        <Route exact path="/works" component={works}></Route>
         <Route exact path="/skills" component={skills}></Route>
       </Switch>
       {/* Routing here */}
