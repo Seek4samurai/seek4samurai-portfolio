@@ -31,7 +31,8 @@ const CENTER = styled.button`
   }
 
   &>:last-child{
-    padding-top: 1rem;
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
   }
 `
 

@@ -4,7 +4,7 @@ import { lightTheme } from "./components/themes"
 import { Route, Switch } from "react-router-dom"
 
 // Componenets imported for routing
-import main from "./components/main"
+import Main from "./components/Main"
 import about from "./components/about"
 import blog from "./components/blog"
 import works from "./components/works"
@@ -16,7 +16,7 @@ function App() {
     <ThemeProvider theme={lightTheme}>
       {/* Routing here */}
       <Switch>
-        <Route exact path="/" component={main}></Route>
+        <Route exact path="/" component={Main}></Route>
         <Route exact path="/about" component={about}></Route>
         <Route exact path="/blog" component={blog}></Route>
         <Route exact path="/works" component={works}></Route>

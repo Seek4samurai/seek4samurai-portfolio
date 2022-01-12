@@ -1,5 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import { useState } from 'react'
+import styled, { keyframes } from 'styled-components'
+import BlackHole from '../subComponents/animate'
 import HomeButton from '../subComponents/homeButton'
 import LogoComp from '../subComponents/LogoComp'
 import SocialIcons from '../subComponents/SocialIcons'
@@ -8,7 +10,7 @@ import Blog from '../subComponents/Blog'
 import Projects from '../subComponents/Projects'
 import About from '../subComponents/About.js'
 import Skills from '../subComponents/Skills'
-import Center from '../subComponents/Center'
+// import Center from '../subComponents/Center'
 
 const MainContainer = styled.div`
   position: relative;
@@ -27,7 +29,60 @@ const Container = styled.div`
   padding: 2rem;
 `
 
-const main = () => {
+const rotate = keyframes`
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+`
+
+const Center = styled.button`
+  position: absolute;
+  top: ${props => props.click ? '84%' : '50%'};
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+
+  &>:first-child{
+    animation: ${rotate} infinite 20s linear;
+  }
+
+  &>:last-child{
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
+    display: ${props => props.click ? 'none' : 'inline-block'};
+  }
+  .outer-circle{
+    height: ${props => props.click ? '100px' : '200px'};
+    width: ${props => props.click ? '100px' : '200px'};
+  }
+  .outer-circle span {
+    height: ${props => props.click ? '100px' : '200px'};
+    width: ${props => props.click ? '100px' : '200px'};
+  }
+  .outer-circle .inner-circle {
+    height: ${props => props.click ? '80px' : '180px'};
+    width: ${props => props.click ? '80px' : '180px'};
+  }
+`
+
+
+const Main = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
   return (
     <>
       <MainContainer>
@@ -35,7 +90,10 @@ const main = () => {
           <HomeButton></HomeButton>
           <LogoComp></LogoComp>
           <SocialIcons></SocialIcons>
-          <Center></Center>
+          <Center click={click} onClick={() => handleClick()}>
+            <BlackHole width={200} height={200}></BlackHole>
+            <span>Click Me!</span>
+          </Center>
           <Contact></Contact>
           <Projects></Projects>
           <Blog></Blog>
@@ -47,4 +105,4 @@ const main = () => {
   )
 }
 
-export default main
+export default Main
