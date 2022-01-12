@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-const PROJECT = styled(NavLink)`
+const SKILLS = styled(NavLink)`
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 2rem;
   color: ${props => props.theme.text};
   text-decoration: none;
@@ -16,14 +16,15 @@ const PROJECT = styled(NavLink)`
   font-weight: bold;
 `
 
-const Projects = () => {
+
+const Skills = () => {
   return (
-    <PROJECT target="_blank" to="/works">
+    <SKILLS target="_blank" to="/skills">
       <h2>
-        Projects
+        Skills
       </h2>
-    </PROJECT>
+    </SKILLS>
   )
 }
 
-export default Projects
+export default Skills

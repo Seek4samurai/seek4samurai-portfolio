@@ -4,8 +4,10 @@ import HomeButton from '../subComponents/homeButton'
 import LogoComp from '../subComponents/LogoComp'
 import SocialIcons from '../subComponents/SocialIcons'
 import Contact from '../subComponents/Contact'
-import Blog from '../subComponents/Blog';
-import Projects from '../subComponents/Projects';
+import Blog from '../subComponents/Blog'
+import Projects from '../subComponents/Projects'
+import About from '../subComponents/About.js'
+import Skills from '../subComponents/Skills'
 
 const MainContainer = styled.div`
   position: relative;
@@ -15,7 +17,7 @@ const MainContainer = styled.div`
   overflow: hidden;
 
   h2,h3,h4,h5,h6{
-    font-family: 'Karla', sans-serif;
+    font-family: 'Vogue', serif;
     font-weight: 500;
   }
 `
@@ -33,8 +35,10 @@ const main = () => {
           <LogoComp></LogoComp>
           <SocialIcons></SocialIcons>
           <Contact></Contact>
-          <Blog></Blog>
           <Projects></Projects>
+          <Blog></Blog>
+          <About></About>
+          <Skills></Skills>
         </Container>
       </MainContainer>
     </>
