@@ -8,6 +8,7 @@ import Blog from '../subComponents/Blog'
 import Projects from '../subComponents/Projects'
 import About from '../subComponents/About.js'
 import Skills from '../subComponents/Skills'
+import Center from '../subComponents/Center'
 
 const MainContainer = styled.div`
   position: relative;
@@ -34,6 +35,7 @@ const main = () => {
           <HomeButton></HomeButton>
           <LogoComp></LogoComp>
           <SocialIcons></SocialIcons>
+          <Center></Center>
           <Contact></Contact>
           <Projects></Projects>
           <Blog></Blog>
