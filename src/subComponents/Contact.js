@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
@@ -14,9 +15,12 @@ const ContactMe = styled(NavLink)`
 const Contact = () => {
   return (
     <ContactMe target="_blank" to={{ pathname: "mailto:grvrawat999@gmail.com" }}>
-      <h2>
+      <motion.h2
+        whileHover={{ scale: 1.6 }}
+        whileTap={{ scale: 0.9 }}
+      >
         Say hi...
-      </h2>
+      </motion.h2>
     </ContactMe>
   )
 }

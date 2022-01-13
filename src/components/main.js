@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import BlackHole from '../subComponents/animate'

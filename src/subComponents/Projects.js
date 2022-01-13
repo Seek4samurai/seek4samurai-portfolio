@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 const PROJECT = styled(NavLink)`
   position: absolute;
@@ -19,9 +20,12 @@ const PROJECT = styled(NavLink)`
 const Projects = () => {
   return (
     <PROJECT target="_blank" to="/works">
-      <h2>
+      <motion.h2
+        whileHover={{ scale: 1.6 }}
+        whileTap={{ scale: 0.9 }}
+      >
         Projects
-      </h2>
+      </motion.h2>
     </PROJECT>
   )
 }

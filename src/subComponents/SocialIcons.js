@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 import { Github, Artstation, Dev, Behance, Dribble } from '../components/AllSvgs'
 
 const Icons = styled.div`
@@ -43,31 +44,46 @@ const SocialIcons = () => {
     <Icons>
       <Line></Line>
       <AllSvgs>
-        <div>
+        <motion.div
+          whileHover={{ scale: 1.6 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <NavLink target="_blank" to={{ pathname: "https://www.github.com/Seek4samurai" }}>
             <Github width={25} height={25} fill="#ffffff"></Github>
           </NavLink>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.6 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <NavLink target="_blank" to={{ pathname: "https://www.artstation.com/Seek4samurai" }}>
             <Artstation width={25} height={25} fill="#ffffff"></Artstation>
           </NavLink>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.6 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <NavLink target="_blank" to={{ pathname: "https://www.dev.to/Seek4samurai" }}>
             <Dev width={25} height={25} fill="#ffffff"></Dev>
           </NavLink>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.6 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <NavLink target="_blank" to={{ pathname: "https://www.behance.net/seek4samurai" }}>
             <Behance width={25} height={25} fill="#ffffff"></Behance>
           </NavLink>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.6 }}
+          whileTap={{ scale: 0.9 }}
+        >
           <NavLink target="_blank" to={{ pathname: "https://www.dribbble.com/seek4samurai" }}>
             <Dribble width={25} height={25} fill="#ffffff"></Dribble>
           </NavLink>
-        </div>
+        </motion.div>
       </AllSvgs>
     </Icons>
   )
