@@ -25,6 +25,10 @@ yarn-error.log*
 # Designs
 /figma 
 /Portfolio Images
-/src/assets
+/src/assets/Images/1.jpg
+/src/assets/Images/2.png
+/src/assets/Images/3.png
+/src/assets/svg
+/src/assets/audio
 /src/data
 /src/config
