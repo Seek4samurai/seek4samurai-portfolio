@@ -11,6 +11,7 @@ import Projects from '../subComponents/Projects'
 import About from '../subComponents/About.js'
 import Skills from '../subComponents/Skills'
 // import Center from '../subComponents/Center'
+import Intro from './Intro'
 
 const MainContainer = styled.div`
   position: relative;
@@ -47,6 +48,7 @@ const Center = styled.button`
   outline: none;
   background: transparent;
   cursor: pointer;
+  z-index: 9;
 
   display: flex;
   flex-direction: column;
@@ -77,6 +79,19 @@ const Center = styled.button`
   }
 `
 
+const DarkDiv = styled.div`
+  position: absolute;
+  background-color: #000000;
+  border-radius: 8px;
+  top: 10%;
+  bottom: 0%;
+  right: 50%;
+  transform: translate(50%, 0);
+  z-index: 1;
+  width: ${props => props.click ? "70%" : "0%"};
+  height: ${props => props.click ? "80%" : "80%"};
+  transition: width 1s ease;
+`
 
 const Main = () => {
   const [click, setClick] = useState(false);
@@ -86,6 +101,7 @@ const Main = () => {
   return (
     <>
       <MainContainer>
+        <DarkDiv click={click}></DarkDiv>
         <Container>
           <HomeButton></HomeButton>
           <LogoComp></LogoComp>
@@ -100,6 +116,7 @@ const Main = () => {
           <About></About>
           <Skills></Skills>
         </Container>
+        {click ? <Intro click={click}></Intro> : null}
       </MainContainer>
     </>
   )
