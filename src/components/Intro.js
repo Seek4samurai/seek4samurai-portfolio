@@ -1,23 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 // import { lightTheme, darktheme } from './themes'
+import { motion } from 'framer-motion'
 import Me from '../assets/Images/profile-img.png'
 
-const Box = styled.div`
+const Box = styled(motion.div)`
   position: absolute;
   width: 55vw;
-  height: 40vh;
+  height: 45vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
   display: flex;
   background-repeat: no-repeat;
-  background-size: 100% 2px;
-  background: #c9d6ff;
-  background: -webkit-linear-gradient(to right, #c9d6ff, #e2e2e2);
-  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
   z-index: 3;
-  border: 4px solid #ffffff;
+  border-radius: 10px;
+  ${'' /* border: 4px solid #ffffff; */}
 `
 
 const SubBox = styled.div`
@@ -35,22 +36,61 @@ const SubBox = styled.div`
   }
 `
 
-const Text = styled.div``
+const Text = styled.div`
+  color: ${props => props.theme.text};
+  font-size: calc(1em + 1.5vw);
+  padding: 2rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  cursor: pointer;
+
+  &>*:last-child{
+    color: ${props => `rgba(${props.theme.textRgba},0.5)`};
+    font-size: calc(0.5rem + 1.2vw);
+    font-weight: 300;
+  }
+`
 
 const Intro = () => {
   return (
-    <Box>
+    <Box
+      initial={{ height: 0 }}
+      animate={{ height: '45vh' }}
+      transition={{ type: 'spring', duration: 2, delay: 1 }}
+    >
       <SubBox>
         <Text>
-          <h1>Hi,</h1>
-          <h3>I'm Gourav</h3>
-          <h6>I love making simple yet effective applications and designs!</h6>
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2 }}
+          >Hi,</motion.h1>
+          <motion.h3
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2 }}
+          >I'm Gourav</motion.h3>
+          <motion.h6
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 2 }}
+          >I love making simple yet effective applications and designs!</motion.h6>
+          {/* <button>
+            Follow me on
+          </button> */}
         </Text>
       </SubBox>
       <SubBox>
-        <div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 2 }}
+        >
           <img className='Image' src={Me} alt='Profile Image'></img>
-        </div>
+        </motion.div>
       </SubBox>
     </Box>
   )
