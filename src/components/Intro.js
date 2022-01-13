@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 // import { lightTheme, darktheme } from './themes'
 import { motion } from 'framer-motion'
-import Me from '../assets/Images/profile-img.png'
+import Me from '../assets/Images/profile.png'
 
 const Box = styled(motion.div)`
   position: absolute;
@@ -32,6 +32,7 @@ const SubBox = styled.div`
     bottom: 0;
     width: 100%;
     height: auto;
+    filter: drop-shadow(0px 0px 6px #57606f);
     transform: translate(-50%, 0%);
   }
 `
@@ -65,7 +66,7 @@ const Intro = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
-          >Hi,</motion.h1>
+          >Hi👋🏾,</motion.h1>
           <motion.h3
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
