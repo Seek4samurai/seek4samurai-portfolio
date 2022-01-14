@@ -29,6 +29,10 @@ yarn-error.log*
 /src/assets/Images/2.png
 /src/assets/Images/3.png
 /src/assets/svg
+
 /src/assets/audio
-/src/data
+
+/src/data/AllSvg.txt
+/src/data/Text.txt
+/src/data/WorkData.js
 /src/config
