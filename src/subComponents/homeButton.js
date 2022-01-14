@@ -38,7 +38,7 @@ const Power = styled.button`
   }
 `
 
-const PowerButton = () => {
+const HomeButton = () => {
   return (
     <Power>
       <NavLink to="/">
@@ -48,4 +48,4 @@ const PowerButton = () => {
   )
 }
 
-export default PowerButton
+export default HomeButton
