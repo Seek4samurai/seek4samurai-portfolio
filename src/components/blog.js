@@ -20,7 +20,7 @@ const Container = styled.div`
   position: relative;
   width: 100%;
   height: auto;
-  ${'' /* padding-bottom: 5rem; */}
+  padding-bottom: 5rem;
 `
 
 const Center = styled.div`
