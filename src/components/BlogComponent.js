@@ -1,11 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom/cjs/react-router-dom.min'
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
 
 const Box = styled(NavLink)`
   height: 20rem;
-  width: calc(10rem + 15vw);
+  width: calc(8rem + 15vw);
   padding: 1rem;
   text-decoration: none;
   cursor: pointer;
