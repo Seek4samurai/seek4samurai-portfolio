@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import { Github, Artstation, Dev, Behance, Dribble } from '../components/AllSvgs'
+import { Github, Artstation, Dev, Behance, Dribble } from '../data/AllSvgs'
 
 const Icons = styled.div`
   position: absolute;
