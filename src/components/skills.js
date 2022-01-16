@@ -141,7 +141,6 @@ const skills = () => {
           </Description>
         </Main>
       </Box>
-      {/* <Particles params={ImgParticles}></Particles> */}
       <ParticleComponent theme='light'></ParticleComponent>
     </ThemeProvider>
   )
