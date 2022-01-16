@@ -5,13 +5,16 @@ import { Palette, WebDev } from '../data/AllSvgs'
 import LogoComp from '../subComponents/LogoComp'
 import SocialIcons from '../subComponents/SocialIcons'
 import HomeButton from '../subComponents/HomeButton'
+import ParticleComponent from '../Particles/ParticleComponent'
+// import ImgParticles from '../Particles/ImgParticles'
+// import Particles from 'react-particles-js'
 
 const Box = styled.div`
   position: relative;
   width: 100vw;
   height: 100vh;
 
-  background-color: ${props => props.theme.body};
+  ${'' /* background-color: ${props => props.theme.body}; */}
   
   display: flex;
   justify-content: space-evenly;
@@ -59,6 +62,7 @@ const Description = styled.div`
   }
   ul,p{
     margin-left: 2rem;
+    font-size: 1.2rem;
   }
 `
 
@@ -66,8 +70,8 @@ const skills = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <LogoComp theme={'light'}></LogoComp>
-      <HomeButton theme={'light'}></HomeButton>
       <SocialIcons ></SocialIcons>
+      <HomeButton theme={'light'}></HomeButton>
       <Box>
         <Main>
           <Title>
@@ -137,6 +141,8 @@ const skills = () => {
           </Description>
         </Main>
       </Box>
+      {/* <Particles params={ImgParticles}></Particles> */}
+      <ParticleComponent theme='light'></ParticleComponent>
     </ThemeProvider>
   )
 }
