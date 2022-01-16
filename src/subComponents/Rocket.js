@@ -15,7 +15,7 @@ const Slider = styled.div`
   align-items: center;
   flex-direction: column;
   transform: translateY(-100%);
-  transform: rotate(90deg);
+
   color: ${props => props.theme.text};
 
   .Cloud{
