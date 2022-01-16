@@ -17,7 +17,7 @@ const MainContainer = styled.div`
 `
 
 const Container = styled.div`
-  background-color: ${props => `rgba(${props.theme.bodyRgba},0.1)`};
+  background-color: ${props => `${props.theme.body},0.5`};
   position: relative;
   width: 100%;
   height: auto;
