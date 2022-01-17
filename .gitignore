@@ -35,3 +35,5 @@ yarn-error.log*
 /src/data/AllSvg.txt
 /src/data/Text.txt
 /src/data/WorkData.js
+
+.vercel
