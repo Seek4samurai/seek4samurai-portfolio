@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import img from '../assets/Images/BlogBG.jpg'
 import LogoComp from '../subComponents/LogoComp'
@@ -6,7 +6,6 @@ import HomeButton from '../subComponents/HomeButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { Blogs } from '../data/BlogData'
 import BlogComponent from './BlogComponent'
-import RocketComponent from '../subComponents/Rocket'
 import { motion } from 'framer-motion'
 
 const MainContainer = styled.div`
@@ -39,13 +38,6 @@ const Grid = styled.div`
 `
 
 const Blog = () => {
-  const [numbers, setNumbers] = useState(0);
-  useEffect(() => {
-    let num = (window.innerHeight - 70) / 30;
-    setNumbers(parseInt(num));
-
-  }, [])
-
   return (
     <motion.div
       initial={{ scale: 0 }}
@@ -56,7 +48,6 @@ const Blog = () => {
           <LogoComp></LogoComp>
           <HomeButton></HomeButton>
           <SocialIcons></SocialIcons>
-          <RocketComponent numbers={numbers}></RocketComponent>
           <Center>
             <Grid>
               {Blogs.map(blog => {

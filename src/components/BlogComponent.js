@@ -1,6 +1,54 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom/cjs/react-router-dom.min'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const float = keyframes`
+  0%
+  {
+    transform: translateY(2px);
+  }
+  10%
+  {
+    transform: translateY(5px) ;
+  }
+  20%
+  {
+    transform: translateY(2px);
+  }
+  30%
+  {
+    transform: translateY(5px) ;
+
+  }
+  40%
+  {
+    transform: translateY(2px);
+  }
+  50%
+  {
+    transform: translateY(5px) ;
+  }
+  60%
+  {
+    transform: translateY(2px);
+  }
+  70%
+  {
+    transform: translateY(5px) ;
+  }
+  80%
+  {
+    transform: translateY(2px);
+  }
+  90%
+  {
+    transform: translateY(5px) ;
+  }
+  100%
+  {
+    transform: translateY(2px);
+  }
+`
 
 const Box = styled(NavLink)`
   height: 20rem;
@@ -23,7 +71,8 @@ const Box = styled(NavLink)`
     color: ${props => props.theme.text};
     background-color: #ffffff;
     transition: all 0.3s ease;
-  }
+    animation: ${float} 1s ease infinite;  
+    }
 `
 
 const Image = styled.div`
