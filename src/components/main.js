@@ -123,6 +123,7 @@ const Main = () => {
         </Container>
         {click ? <Intro click={click}></Intro> : null}
       </MainContainer>
+      <ParticleComponentMain theme='light'></ParticleComponentMain>
     </motion.div>
   )
 }
