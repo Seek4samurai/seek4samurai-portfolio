@@ -1,9 +1,6 @@
 import React from 'react'
 import Particles from 'react-particles-js'
 import styled from 'styled-components'
-import configDark from '../config/particlesjs-config.json'
-import configLight from '../config/particlesjs-config-light.json'
-import { tsParticles } from 'tsparticles'
 
 const Box = styled.div`
   position: absolute;
@@ -22,7 +19,7 @@ const ParticleComponentAbout = (props) => {
       <Particles
         params={{
           background: {
-            color: { value: "#000000" },
+            color: { value: "#f1f2f6" },
             image: "",
             position: "50% 50%",
             repeat: "no-repeat",
@@ -31,7 +28,7 @@ const ParticleComponentAbout = (props) => {
           },
           backgroundMask: {
             composite: "destination-out",
-            cover: { color: { value: "#fff" }, opacity: 1 },
+            cover: { color: { value: "#000" }, opacity: 1 },
             enable: false
           },
           fullScreen: { enable: true, zIndex: 0 },
@@ -74,10 +71,10 @@ const ParticleComponentAbout = (props) => {
               },
               light: {
                 area: {
-                  gradient: { start: { value: "#ffffff" }, stop: { value: "#000000" } },
+                  gradient: { start: { value: "#000000" }, stop: { value: "#ffffff" } },
                   radius: 1000
                 },
-                shadow: { color: { value: "#000000" }, length: 2000 }
+                shadow: { color: { value: "#ffffff" }, length: 2000 }
               },
               push: {
                 default: true,
@@ -114,7 +111,7 @@ const ParticleComponentAbout = (props) => {
               overlap: { enable: true, retries: 0 }
             },
             color: {
-              value: "#fff",
+              value: "#000",
               animation: {
                 h: { count: 0, enable: false, offset: 0, speed: 20, sync: true },
                 s: { count: 0, enable: false, offset: 0, speed: 1, sync: true },
@@ -309,9 +306,9 @@ const ParticleComponentAbout = (props) => {
                 type: "images",
                 options: {
                   images: {
-                    src: "https://particles.js.org/images/cyan_amongus.png",
-                    width: 500,
-                    height: 634
+                    src: 'https://github.com/Seek4samurai/reactJS-portfolio/blob/main/src/assets/Images/Doggo.png?raw=true',
+                    width: 291,
+                    height: 489
                   }
                 }
               },
@@ -324,10 +321,10 @@ const ParticleComponentAbout = (props) => {
               zIndex: { value: 0 },
               rotate: {
                 value: { min: 0, max: 360 },
-                animation: { enable: true, speed: 10, sync: true }
+                animation: { enable: true, speed: 20, sync: true }
               }
             },
-            position: { x: -5, y: 75 }
+            position: { x: -5, y: 80 }
           }
         }} />
     </Box>

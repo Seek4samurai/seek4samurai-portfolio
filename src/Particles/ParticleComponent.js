@@ -1,9 +1,6 @@
 import React from 'react'
 import Particles from 'react-particles-js'
 import styled from 'styled-components'
-import configDark from '../config/particlesjs-config.json'
-import configLight from '../config/particlesjs-config-light.json'
-import { tsParticles } from 'tsparticles'
 
 const Box = styled.div`
   position: absolute;
@@ -22,13 +19,6 @@ const ParticleComponent = (props) => {
       <div id="tsparticles"></div>
       <Particles
         params={
-          {
-            image: "",
-            position: "50% 50%",
-            repeat: "no-repeat",
-            size: "cover",
-            opacity: 1
-          },
           {
             backgroundMask: {
               composite: "destination-out",
