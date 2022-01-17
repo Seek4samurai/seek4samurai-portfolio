@@ -2,7 +2,7 @@ import GlobalStyle from "./globalStyles"
 import { ThemeProvider } from "styled-components"
 import { lightTheme } from "./components/themes"
 import { Route, Switch } from "react-router-dom"
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 
 // Componenets imported for routing
 import Main from "./components/Main"
