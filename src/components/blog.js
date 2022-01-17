@@ -48,9 +48,9 @@ const Blog = () => {
 
   return (
     <motion.div
-      initial={{ translateY: "100%" }}
-      animate={{ translateY: "0" }}
-      exit={{ translateY: "100%" }}>
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      exit={{ scale: 0 }}>
       <MainContainer>
         <Container>
           <LogoComp></LogoComp>

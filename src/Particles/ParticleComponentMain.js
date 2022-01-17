@@ -19,7 +19,6 @@ const ParticleComponentMain = (props) => {
     <Box>
       {/* <Particles style={{ position: 'absolute', top: 0 }} params={props.theme === "light" ? configLight : configDark} >
       </Particles> */}
-      <div id="tsparticles"></div>
       <Particles
         params={
           {

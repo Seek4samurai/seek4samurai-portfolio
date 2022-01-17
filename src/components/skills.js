@@ -6,6 +6,7 @@ import LogoComp from '../subComponents/LogoComp'
 import SocialIcons from '../subComponents/SocialIcons'
 import HomeButton from '../subComponents/HomeButton'
 import ParticleComponent from '../Particles/ParticleComponent'
+import { motion } from 'framer-motion'
 // import ImgParticles from '../Particles/ImgParticles'
 // import Particles from 'react-particles-js'
 
@@ -69,79 +70,84 @@ const Description = styled.div`
 const skills = () => {
   return (
     <ThemeProvider theme={lightTheme}>
-      <LogoComp theme={'light'}></LogoComp>
-      <SocialIcons ></SocialIcons>
-      <HomeButton theme={'light'}></HomeButton>
-      <Box>
-        <Main>
-          <Title>
-            <Palette width={40} height={40} /> UI/UX Designer
-          </Title>
-          <Description>
-            Simple, Sober and Sexy design that speak and stands out.
-          </Description>
-          <Description>
-            <strong>Prefers Designing</strong>
-            <ul>
-              <li>
-                Web Designs
-              </li>
-              <li>
-                Mobile Apps
-              </li>
-              <li>
-                Dashboards
-              </li>
-            </ul>
-          </Description>
-          <Description>
-            <strong>TOOLS</strong>
-            <ul>
-              <li>
-                Figma
-              </li>
-              <li>
-                Illustrator
-              </li>
-              <li>
-                Adobe XD
-              </li>
-            </ul>
-          </Description>
-        </Main>
-        <Main>
-          <Title>
-            <WebDev width={40} height={40} /> Developer
-          </Title>
-          <Description>
-            Making UIs and Developing them to real. Web-development, programming and playing with data structures.
-          </Description>
-          <Description>
-            <strong>Prefers to work with</strong>
-            <p>
-              Sass, JS, ReactJS, NodeJS, NextJS, ExpressJS, Git, Bootstrap etc.
-            </p>
-          </Description>
-          <Description>
-            <strong>TOOLS</strong>
-            <ul>
-              <li>
-                Atom
-              </li>
-              <li>
-                VScode
-              </li>
-              <li>
-                PyCharm
-              </li>
-              <li>
-                Github
-              </li>
-            </ul>
-          </Description>
-        </Main>
-      </Box>
-      <ParticleComponent theme='light'></ParticleComponent>
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        exit={{ scale: 0 }}>
+        <LogoComp theme={'light'}></LogoComp>
+        <SocialIcons ></SocialIcons>
+        <HomeButton theme={'light'}></HomeButton>
+        <Box>
+          <Main>
+            <Title>
+              <Palette width={40} height={40} /> UI/UX Designer
+            </Title>
+            <Description>
+              Simple, Sober and Sexy design that speak and stands out.
+            </Description>
+            <Description>
+              <strong>Prefers Designing</strong>
+              <ul>
+                <li>
+                  Web Designs
+                </li>
+                <li>
+                  Mobile Apps
+                </li>
+                <li>
+                  Dashboards
+                </li>
+              </ul>
+            </Description>
+            <Description>
+              <strong>TOOLS</strong>
+              <ul>
+                <li>
+                  Figma
+                </li>
+                <li>
+                  Illustrator
+                </li>
+                <li>
+                  Adobe XD
+                </li>
+              </ul>
+            </Description>
+          </Main>
+          <Main>
+            <Title>
+              <WebDev width={40} height={40} /> Developer
+            </Title>
+            <Description>
+              Making UIs and Developing them to real. Web-development, programming and playing with data structures.
+            </Description>
+            <Description>
+              <strong>Prefers to work with</strong>
+              <p>
+                Sass, JS, ReactJS, NodeJS, NextJS, ExpressJS, Git, Bootstrap etc.
+              </p>
+            </Description>
+            <Description>
+              <strong>TOOLS</strong>
+              <ul>
+                <li>
+                  Atom
+                </li>
+                <li>
+                  VScode
+                </li>
+                <li>
+                  PyCharm
+                </li>
+                <li>
+                  Github
+                </li>
+              </ul>
+            </Description>
+          </Main>
+        </Box>
+        <ParticleComponent theme='light'></ParticleComponent>
+      </motion.div>
     </ThemeProvider>
   )
 }

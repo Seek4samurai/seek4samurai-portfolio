@@ -102,9 +102,9 @@ const Main = () => {
 
   return (
     <motion.div
-      initial={{ translateY: "100%" }}
-      animate={{ translateY: "0" }}
-      exit={{ translateY: "100%" }}>
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      exit={{ scale: 0 }}>
       <MainContainer>
         <DarkDiv click={click}></DarkDiv>
         <Container>
@@ -123,7 +123,7 @@ const Main = () => {
         </Container>
         {click ? <Intro click={click}></Intro> : null}
       </MainContainer>
-      <ParticleComponentMain theme='light'></ParticleComponentMain>
+      <ParticleComponentMain></ParticleComponentMain>
     </motion.div>
   )
 }
