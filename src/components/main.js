@@ -10,8 +10,10 @@ import Blog from '../subComponents/Blog'
 import Projects from '../subComponents/Projects'
 import About from '../subComponents/About.js'
 import Skills from '../subComponents/Skills'
+import ParticleComponentMain from '../Particles/ParticleComponentMain'
 // import Center from '../subComponents/Center'
 import Intro from './Intro'
+import { motion } from 'framer-motion'
 
 const MainContainer = styled.div`
   position: relative;
@@ -99,7 +101,10 @@ const Main = () => {
   const handleClick = () => setClick(!click);
 
   return (
-    <>
+    <motion.div
+      initial={{ translateY: "100%" }}
+      animate={{ translateY: "0" }}
+      exit={{ translateY: "100%" }}>
       <MainContainer>
         <DarkDiv click={click}></DarkDiv>
         <Container>
@@ -118,7 +123,7 @@ const Main = () => {
         </Container>
         {click ? <Intro click={click}></Intro> : null}
       </MainContainer>
-    </>
+    </motion.div>
   )
 }
 

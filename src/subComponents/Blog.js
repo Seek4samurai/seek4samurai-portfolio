@@ -19,7 +19,7 @@ const BLOG = styled(NavLink)`
 
 const Blog = () => {
   return (
-    <BLOG target="_blank" to="/blog">
+    <BLOG to="/blog">
       <motion.h2
         whileHover={{ scale: 1.6 }}
         whileTap={{ scale: 0.9 }}

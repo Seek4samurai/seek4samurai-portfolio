@@ -19,7 +19,7 @@ const ABOUT = styled(NavLink)`
 
 const About = () => {
   return (
-    <ABOUT target="_blank" to="/about">
+    <ABOUT to="/about">
       <motion.h2
         whileHover={{ scale: 1.6 }}
         whileTap={{ scale: 0.9 }}

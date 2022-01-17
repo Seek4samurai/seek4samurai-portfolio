@@ -20,7 +20,7 @@ const SKILLS = styled(NavLink)`
 
 const Skills = () => {
   return (
-    <SKILLS target="_blank" to="/skills">
+    <SKILLS to="/skills">
       <motion.h2
         whileHover={{ scale: 1.6 }}
         whileTap={{ scale: 0.9 }}

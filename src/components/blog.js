@@ -7,6 +7,7 @@ import SocialIcons from '../subComponents/SocialIcons'
 import { Blogs } from '../data/BlogData'
 import BlogComponent from './BlogComponent'
 import RocketComponent from '../subComponents/Rocket'
+import { motion } from 'framer-motion'
 
 const MainContainer = styled.div`
   background-image: url(${img});
@@ -46,21 +47,26 @@ const Blog = () => {
   }, [])
 
   return (
-    <MainContainer>
-      <Container>
-        <LogoComp></LogoComp>
-        <HomeButton></HomeButton>
-        <SocialIcons></SocialIcons>
-        <RocketComponent numbers={numbers}></RocketComponent>
-        <Center>
-          <Grid>
-            {Blogs.map(blog => {
-              return <BlogComponent key={blog.id} blog={blog}></BlogComponent>
-            })}
-          </Grid>
-        </Center>
-      </Container>
-    </MainContainer>
+    <motion.div
+      initial={{ translateY: "100%" }}
+      animate={{ translateY: "0" }}
+      exit={{ translateY: "100%" }}>
+      <MainContainer>
+        <Container>
+          <LogoComp></LogoComp>
+          <HomeButton></HomeButton>
+          <SocialIcons></SocialIcons>
+          <RocketComponent numbers={numbers}></RocketComponent>
+          <Center>
+            <Grid>
+              {Blogs.map(blog => {
+                return <BlogComponent key={blog.id} blog={blog}></BlogComponent>
+              })}
+            </Grid>
+          </Center>
+        </Container>
+      </MainContainer>
+    </motion.div>
   )
 }
 

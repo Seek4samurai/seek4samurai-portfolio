@@ -19,7 +19,7 @@ const PROJECT = styled(NavLink)`
 
 const Projects = () => {
   return (
-    <PROJECT target="_blank" to="/works">
+    <PROJECT to="/works">
       <motion.h2
         whileHover={{ scale: 1.6 }}
         whileTap={{ scale: 0.9 }}
