@@ -6,7 +6,7 @@ import LogoComp from '../subComponents/LogoComp'
 import SocialIcons from '../subComponents/SocialIcons'
 import HomeButton from '../subComponents/HomeButton'
 import ParticleComponentAbout from '../Particles/ParticleComponentAbout'
-import img from '../assets/Images/profile.png'
+import img from '../assets/Images/cuteAnimal.png'
 // import ImgParticles from '../Particles/ImgParticles'
 // import Particles from 'react-particles-js'
 
@@ -35,6 +35,21 @@ const float = keyframes`
   }
 `
 
+const disco = keyframes`
+  0%
+  {
+    filter:hue-rotate(90deg);
+  }
+  50%
+  {
+    filter:hue-rotate(180deg);
+  }
+  100%
+  {
+    filter:hue-rotate(90deg);
+  }
+`
+
 const Meh = styled.div`
   position: absolute;
   top: 20%;
@@ -48,7 +63,7 @@ const Meh = styled.div`
     transform: rotate(15deg);
     width: 100%;
     height: auto;
-    filter: drop-shadow(0px 0px 4px #000);
+    animation: ${disco} 1s ease infinite;
   }
 `
 
@@ -92,8 +107,8 @@ const AboutPage = () => {
           </Meh>
           <Main>
             Hi, nice to meet you👋🏾 <br></br><br></br>
-            I'm Gourav and I'm from Indore, a city in India 🌏 and I love doing web-development, and working on UI/UX designs.
-            Apart from these really love to play with data-structures📅 and problem solving things😎, using C++ for those and Python for data studies.
+            I'm Gourav based in India 🌏 and I love doing web-development, and working on UI/UX designs.
+            Apart from these I really love to play with data-structures📅 and problem solving things😎, using C++ for those and Python🐍 for data studies.
             <br></br><br></br>🚀I've also done some freelancing works since few years on different platforms.
             <br></br><br></br>🚀I also like to do maths ✏️ on weekends.
           </Main>

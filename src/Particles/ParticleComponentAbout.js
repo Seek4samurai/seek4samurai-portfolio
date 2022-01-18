@@ -314,7 +314,7 @@ const ParticleComponentAbout = (props) => {
               },
               size: { value: 100 },
               move: {
-                speed: 10,
+                speed: 5,
                 outModes: { default: "none", right: "destroy" },
                 straight: true
               },
@@ -324,7 +324,7 @@ const ParticleComponentAbout = (props) => {
                 animation: { enable: true, speed: 20, sync: true }
               }
             },
-            position: { x: -5, y: 80 }
+            position: { x: -5, y: 15 }
           }
         }} />
     </Box>
