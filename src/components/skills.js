@@ -67,7 +67,7 @@ const Description = styled.div`
   }
 `
 
-const skills = () => {
+const Skills = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <motion.div
@@ -152,4 +152,4 @@ const skills = () => {
   )
 }
 
-export default skills
+export default Skills

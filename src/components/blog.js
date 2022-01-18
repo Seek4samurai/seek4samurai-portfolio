@@ -5,7 +5,7 @@ import LogoComp from '../subComponents/LogoComp'
 import HomeButton from '../subComponents/HomeButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { Blogs } from '../data/BlogData'
-import BlogComponent from './BlogComponent'
+import BlogComponent from './blogComponent'
 import { motion } from 'framer-motion'
 
 const MainContainer = styled.div`
