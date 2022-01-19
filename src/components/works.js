@@ -11,7 +11,7 @@ import img from '../assets/Images/ProjectBG.jpg'
 const Box = styled.div`
   position: relative;
 
-  height: 400vh;
+  height: 300vh;
   background-color: #000;
   background-color: ${props => props.theme.body};
 
@@ -58,7 +58,7 @@ const WorkPage = () => {
         <SocialIcons></SocialIcons>
         <HomeButton></HomeButton>
         <Box>
-          <Main>
+          <Main ref={ref}>
             {
               Work.map(data =>
                 <Card key={data.id} data={data}></Card>
