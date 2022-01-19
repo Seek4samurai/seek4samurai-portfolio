@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { Github, Artstation, Dev, Behance, Dribble } from '../data/AllSvgs'
 
 const Icons = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   left: 0;
   right: 0;
@@ -16,7 +16,7 @@ const Icons = styled.div`
   justify-content: center;
   align-items:center;
 
-  z-index: 3;
+  z-index: 99;
 
   svg{
     color: ${props => props.theme.text};
