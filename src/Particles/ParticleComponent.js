@@ -41,7 +41,7 @@ const ParticleComponent = (props) => {
               detectsOn: "window",
               events: {
                 onClick: {
-                  enable: true,
+                  enable: false,
                   mode: "push"
                 },
                 onDiv: {
@@ -349,7 +349,7 @@ const ParticleComponent = (props) => {
               number: {
                 density: {
                   enable: true,
-                  area: 1000,
+                  area: 1500,
                   factor: 1000
                 },
                 limit: 0,
