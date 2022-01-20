@@ -7,6 +7,8 @@ import SocialIcons from '../subComponents/SocialIcons'
 import HomeButton from '../subComponents/HomeButton'
 import ParticleComponent from '../Particles/ParticleComponent'
 import { motion } from 'framer-motion'
+import BackText from '../subComponents/BigText'
+
 // import ImgParticles from '../Particles/ImgParticles'
 // import Particles from 'react-particles-js'
 
@@ -37,7 +39,7 @@ const Main = styled.div`
   width: 30vw;
   height: 60vh;
 
-  z-index: 3;
+  z-index: 5;
   line-height: 1.5;
   cursor: pointer;
 `
@@ -145,6 +147,7 @@ const Skills = () => {
               </ul>
             </Description>
           </Main>
+          <BackText text="Skills" top="3%" right="25%"></BackText>
         </Box>
         <ParticleComponent theme='light'></ParticleComponent>
       </motion.div>

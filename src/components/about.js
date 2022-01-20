@@ -7,6 +7,8 @@ import SocialIcons from '../subComponents/SocialIcons'
 import HomeButton from '../subComponents/HomeButton'
 import ParticleComponentAbout from '../Particles/ParticleComponentAbout'
 import img from '../assets/Images/cuteAnimal.png'
+import BackText from '../subComponents/BigText'
+
 // import ImgParticles from '../Particles/ImgParticles'
 // import Particles from 'react-particles-js'
 
@@ -88,7 +90,7 @@ const Main = styled.div`
   border: 4px solid ${props => props.theme.text};
   border-radius: 15px;
 
-  z-index: 3;
+  z-index: 5;
 `
 
 const AboutPage = () => {
@@ -113,6 +115,7 @@ const AboutPage = () => {
             <br></br><br></br>🚀I also like to do maths ✏️ on weekends.
           </Main>
         </Box>
+        <BackText text="About" top="6%" right="20%"></BackText>
         <ParticleComponentAbout></ParticleComponentAbout>
       </motion.div>
     </ThemeProvider>

@@ -7,6 +7,7 @@ import { lightTheme } from './themes'
 import { Work } from '../data/WorkData'
 import Card from '../subComponents/Card'
 import img from '../assets/Images/ProjectBG.jpg'
+import BackText from '../subComponents/BigText'
 
 const Box = styled.div`
   position: relative;
@@ -29,8 +30,8 @@ const Main = styled.ul`
   top: 12rem;
   left: calc(10rem + 15vw);
   height: 40vh;
-
   display: flex;
+  z-index: 7;
 `
 
 const WorkPage = () => {
@@ -40,7 +41,7 @@ const WorkPage = () => {
     let element = ref.current;
 
     const rotate = () => {
-      element.style.transform = `translateX(${-window.pageYOffset}px)`
+      element.style.transform = `translateX(${-window.scrollY}px)`
     }
 
     window.addEventListener('scroll', rotate)
@@ -65,6 +66,7 @@ const WorkPage = () => {
               )
             }
           </Main>
+          <BackText text="Projects" top="10%" right="20%"></BackText>
         </Box>
       </motion.div>
     </ThemeProvider>

@@ -7,6 +7,7 @@ import SocialIcons from '../subComponents/SocialIcons'
 import { Blogs } from '../data/BlogData'
 import BlogComponent from './blogComponent'
 import { motion } from 'framer-motion'
+import BackText from '../subComponents/BigText'
 
 const MainContainer = styled.div`
   background-image: url(${img});
@@ -56,6 +57,7 @@ const Blog = () => {
             </Grid>
           </Center>
         </Container>
+        <BackText text="Blogs" top="6%" right="20%"></BackText>
       </MainContainer>
     </motion.div>
   )
