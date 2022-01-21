@@ -10,7 +10,6 @@ import Blog from '../subComponents/Blog'
 import Projects from '../subComponents/Projects'
 import About from '../subComponents/About.js'
 import Skills from '../subComponents/Skills'
-import ParticleComponentMain from '../Particles/ParticleComponentMain'
 // import Center from '../subComponents/Center'
 import Intro from './Intro'
 import { motion } from 'framer-motion'
@@ -123,7 +122,6 @@ const Main = () => {
         </Container>
         {click ? <Intro click={click}></Intro> : null}
       </MainContainer>
-      <ParticleComponentMain></ParticleComponentMain>
     </motion.div>
   )
 }
