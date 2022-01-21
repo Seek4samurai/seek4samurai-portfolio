@@ -79,6 +79,7 @@ const Center = styled.button`
     width: ${props => props.click ? '80px' : '180px'};
   }
 
+@media only screen and (max-width: 670px){
   .outer-circle{
     height: ${props => props.click ? '50px' : '130px'};
     width: ${props => props.click ? '50px' : '130px'};
@@ -91,6 +92,7 @@ const Center = styled.button`
     height: ${props => props.click ? '30px' : '110px'};
     width: ${props => props.click ? '30px' : '110px'};
   }
+}
 `
 
 const DarkDiv = styled.div`

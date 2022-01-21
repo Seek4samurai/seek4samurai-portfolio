@@ -12,6 +12,7 @@ const ContactMe = styled(NavLink)`
   z-index: 1;
 
 @media only screen and (max-width: 670px) {
+  top: 4rem;
   font-size: 0.8rem;
 }
 `
