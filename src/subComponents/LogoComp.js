@@ -20,6 +20,7 @@ const Logo = styled.h1`
   }
 
 @media only screen and (max-width: 670px) {
+  top: 0.5rem;
   left: 0.5rem;
   div{
     max-width: 120px;

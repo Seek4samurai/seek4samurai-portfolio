@@ -17,6 +17,7 @@ const SKILLS = styled(NavLink)`
   font-weight: bold;
 
 @media only screen and (max-width: 670px) {
+  top: 55%;
   left: 0.5rem;
   font-size: 0.8rem;
 }

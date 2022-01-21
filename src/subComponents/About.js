@@ -17,6 +17,7 @@ const ABOUT = styled(NavLink)`
   font-weight: bold;
 
 @media only screen and (max-width: 670px) {
+  top: 45%;
   left: 0.5rem;
   font-size: 0.8rem;
 }

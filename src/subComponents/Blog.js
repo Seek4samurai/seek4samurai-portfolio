@@ -17,6 +17,7 @@ const BLOG = styled(NavLink)`
   font-weight: bold;
 
 @media only screen and (max-width: 670px) {
+  top: 35%;
   left: 0.5rem;
   font-size: 0.8rem;
 }
