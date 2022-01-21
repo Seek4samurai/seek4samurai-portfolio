@@ -18,13 +18,31 @@ const Logo = styled.h1`
     font-weight: 300;
     font-size: 26px;
   }
+
+@media only screen and (max-width: 670px) {
+  left: 0.5rem;
+  div{
+    max-width: 120px;
+  }
+  span {
+    font-size: 1.4rem;
+  }
+  i{
+    font-size: 1.4rem;
+  }
+}
 `
 
 const LogoComp = () => {
   return (
     <Logo>
-      Gourav Singh Rawat <br></br>
-      <i>Seek4Samurai</i>
+      <div>
+        <span>
+          Gourav Singh Rawat
+        </span>
+        <br></br>
+        <i>Seek4Samurai</i>
+      </div>
     </Logo>
   )
 }

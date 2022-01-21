@@ -72,6 +72,34 @@ const ANIMATE = styled.div`
             filter: hue-rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 670px) {
+  ${'' /* .outer-circle {
+    height: 130px !important;
+    width: 130px !important;
+  }
+  .outer-circle span {
+    height: 130px !important;
+    width: 130px !important;
+  }
+  .outer-circle .inner-circle {
+    height: 110px !important;
+    width: 110px !important;
+  } */}
+  .outer-circle{
+    height: ${props => props.click ? '30px' : '130px'};
+    width: ${props => props.click ? '30px' : '130px'};
+  }
+  .outer-circle span {
+    height: ${props => props.click ? '30px' : '130px'};
+    width: ${props => props.click ? '30px' : '130px'};
+  }
+  .outer-circle .inner-circle {
+    height: ${props => props.click ? '10px' : '110px'};
+    width: ${props => props.click ? '10px' : '110px'};
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
 `
 

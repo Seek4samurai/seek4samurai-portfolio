@@ -10,6 +10,10 @@ const ContactMe = styled(NavLink)`
   right: calc(1rem + 2vw);
   text-decoration: none;
   z-index: 1;
+
+@media only screen and (max-width: 670px) {
+  font-size: 0.8rem;
+}
 `
 
 const Contact = () => {

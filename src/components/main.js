@@ -63,7 +63,7 @@ const Center = styled.button`
 
   &>:last-child{
     padding-top: 2.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: ${props => props.click ? 'none' : 'inline-block'};
   }
   .outer-circle{
@@ -77,6 +77,19 @@ const Center = styled.button`
   .outer-circle .inner-circle {
     height: ${props => props.click ? '80px' : '180px'};
     width: ${props => props.click ? '80px' : '180px'};
+  }
+
+  .outer-circle{
+    height: ${props => props.click ? '50px' : '130px'};
+    width: ${props => props.click ? '50px' : '130px'};
+  }
+  .outer-circle span {
+    height: ${props => props.click ? '50px' : '130px'};
+    width: ${props => props.click ? '50px' : '130px'};
+  }
+  .outer-circle .inner-circle {
+    height: ${props => props.click ? '30px' : '110px'};
+    width: ${props => props.click ? '30px' : '110px'};
   }
 `
 
@@ -92,6 +105,11 @@ const DarkDiv = styled.div`
   width: ${props => props.click ? "70%" : "0%"};
   height: ${props => props.click ? "80%" : "80%"};
   transition: width 1s ease;
+
+@media only screen and (max-width: 670px) {
+  {
+    width: ${props => props.click ? "55vw" : "0%"}!important;
+  }
 `
 
 const Main = () => {
@@ -105,7 +123,7 @@ const Main = () => {
       animate={{ scale: 1 }}
       exit={{ scale: 0 }}>
       <MainContainer>
-        <DarkDiv click={click}></DarkDiv>
+        <DarkDiv className='Darkdiv' click={click}></DarkDiv>
         <Container>
           <HomeButton></HomeButton>
           <LogoComp></LogoComp>

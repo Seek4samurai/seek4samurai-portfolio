@@ -35,6 +35,11 @@ const SubBox = styled.div`
     filter: drop-shadow(0px 0px 6px #57606f);
     transform: translate(-50%, 0%);
   }
+@media only screen and (max-width: 670px) {
+  h1{
+    font-size: 2rem !important;
+  }
+}
 `
 
 const Text = styled.div`

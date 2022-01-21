@@ -15,6 +15,11 @@ const SKILLS = styled(NavLink)`
   letter-spacing: -2px;
   font-weight: 800;
   font-weight: bold;
+
+@media only screen and (max-width: 670px) {
+  left: 0.5rem;
+  font-size: 0.8rem;
+}
 `
 
 
