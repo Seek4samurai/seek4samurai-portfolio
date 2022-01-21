@@ -107,7 +107,6 @@ const DarkDiv = styled.div`
   transition: width 1s ease;
 
 @media only screen and (max-width: 670px) {
-  {
     width: ${props => props.click ? "55vw" : "0%"}!important;
   }
 `
