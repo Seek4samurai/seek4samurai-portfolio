@@ -46,7 +46,6 @@ const Blog = () => {
       exit={{ scale: 0 }}>
       <MainContainer>
         <Container>
-          <LogoComp></LogoComp>
           <HomeButton></HomeButton>
           <SocialIcons></SocialIcons>
           <Center>

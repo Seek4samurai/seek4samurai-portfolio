@@ -76,7 +76,6 @@ const Skills = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         exit={{ scale: 0 }}>
-        <LogoComp theme={'light'}></LogoComp>
         <SocialIcons ></SocialIcons>
         <HomeButton theme={'light'}></HomeButton>
         <Box>
