@@ -73,6 +73,10 @@ const Box = styled(NavLink)`
     transition: all 0.3s ease;
     animation: ${float} 1s ease infinite;  
     }
+
+@media only screen and (max-width: 670px) {
+  width: calc(8rem + 25vw);
+}
 `
 
 const Image = styled.div`

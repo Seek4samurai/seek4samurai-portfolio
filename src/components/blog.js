@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from '../assets/Images/BlogBG.jpg'
-import LogoComp from '../subComponents/LogoComp'
 import HomeButton from '../subComponents/HomeButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import { Blogs } from '../data/BlogData'
@@ -21,8 +20,22 @@ const Container = styled.div`
   background-color: ${props => `${props.theme.body},0.5`};
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
   padding-bottom: 5rem;
+`
+
+const Content = styled.div`
+  position: relative;
+  top: 10vh;
+  height: 80vh;
+  overflow-Y: auto;
+  overflow-X: hidden;
+
+  ::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera*/
+  -ms-overflow-style: none; /* Fastest Internet explorer and Edge*/
+  scrollbar-width: none; /* Firefox*/
+}
 `
 
 const Center = styled.div`
@@ -36,6 +49,10 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
   grid-gap: calc(0.8rem + 2vw);
+
+@media only screen and (max-width: 670px) {
+  grid-template-columns: repeat(1, minmax(calc(10rem + 15vw), 1fr));
+}
 `
 
 const Blog = () => {
@@ -48,13 +65,15 @@ const Blog = () => {
         <Container>
           <HomeButton></HomeButton>
           <SocialIcons></SocialIcons>
-          <Center>
-            <Grid>
-              {Blogs.map(blog => {
-                return <BlogComponent key={blog.id} blog={blog}></BlogComponent>
-              })}
-            </Grid>
-          </Center>
+          <Content>
+            <Center>
+              <Grid>
+                {Blogs.map(blog => {
+                  return <BlogComponent key={blog.id} blog={blog}></BlogComponent>
+                })}
+              </Grid>
+            </Center>
+          </Content>
         </Container>
         <BackText text="Blogs" top="6%" right="20%"></BackText>
       </MainContainer>
