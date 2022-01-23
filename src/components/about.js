@@ -2,7 +2,6 @@ import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import { motion } from 'framer-motion'
 import { lightTheme } from './themes'
-import LogoComp from '../subComponents/LogoComp'
 import SocialIcons from '../subComponents/SocialIcons'
 import HomeButton from '../subComponents/HomeButton'
 import ParticleComponentAbout from '../Particles/ParticleComponentAbout'
@@ -91,6 +90,11 @@ const Main = styled.div`
   border-radius: 15px;
 
   z-index: 5;
+
+@media only screen and (max-width: 548px) {
+  left: 50%;
+  transform: translateX(-50%);
+}
 `
 
 const AboutPage = () => {
@@ -100,7 +104,6 @@ const AboutPage = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         exit={{ scale: 0 }}>
-        <LogoComp></LogoComp>
         <SocialIcons></SocialIcons>
         <HomeButton></HomeButton>
         <Box>
