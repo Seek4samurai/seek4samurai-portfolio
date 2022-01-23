@@ -66,6 +66,49 @@ const Description = styled.div`
     margin-left: 2rem;
     font-size: 1.2rem;
   }
+
+@media only screen and (max-width: 670px) {
+  font-size: calc(0.8em + 0.8vw);
+  padding: 0rem 0;
+
+  strong{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  ul,p{
+    margin-left: 1.2rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-height: 768px) {
+  padding: 0rem 0;
+
+  strong{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  ul,p{
+    margin-left: 1.2rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  font-size: calc(0.6em + 0.6vw);
+  padding: 0rem 0;
+
+  strong{
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  ul,p{
+    margin-left: 1rem;
+    font-size: 0.7rem;
+  }
+}
 `
 
 const Skills = () => {
