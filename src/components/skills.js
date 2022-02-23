@@ -40,7 +40,9 @@ const Main = styled.div`
 
   z-index: 5;
   line-height: 1.5;
-  cursor: pointer;
+  @media only screen and (max-width: 300px) {
+    height: 65vh;
+  }
 `
 
 const Title = styled.h2`
@@ -50,6 +52,10 @@ const Title = styled.h2`
   
   font-size: calc(1em + 1vw);
   color: ${props => props.theme.text};
+
+  @media only screen and (max-width: 300px) {
+    font-size: 0.8rem;
+  }
 `
 
 const Description = styled.div`
@@ -68,7 +74,7 @@ const Description = styled.div`
   }
 
 @media only screen and (max-width: 670px) {
-  font-size: calc(0.8em + 0.8vw);
+  font-size: calc(0.6em + 0.6vw);
   padding: 0rem 0;
 
   strong{
@@ -162,12 +168,12 @@ const Skills = () => {
               <WebDev width={40} height={40} /> Developer
             </Title>
             <Description>
-              Making UIs and Developing them to real. Web-development, programming and playing with data structures.
+              Making UIs and Developing them to real. Web-application development, working on smart contracts and playing with data structures.
             </Description>
             <Description>
               <strong>Prefers to work with</strong>
               <p>
-                Sass, JS, ReactJS, NodeJS, NextJS, ExpressJS, Git, Bootstrap etc.
+                Sass, Tailwind, JS, ReactJS, NodeJS, NextJS, ExpressJS, Git, Ethereum, Solidity, etc.
               </p>
             </Description>
             <Description>
