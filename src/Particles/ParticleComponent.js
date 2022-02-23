@@ -466,68 +466,73 @@ const ParticleComponent = (props) => {
                     sides: 5
                   },
                   image: [{
-                    src: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+                    src: "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
                     width: 32,
                     height: 32
                   },
                   {
-                    src: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+                    src: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
                     width: 32,
                     height: 32
                   },
                   {
-                    src: "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
+                    src: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
                     width: 32,
                     height: 32
                   },
                   {
-                    src: "https://cdn-icons-png.flaticon.com/512/5968/5968472.png",
+                    src: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg",
                     width: 32,
                     height: 32
                   },
                   {
-                    src: "https://cdn-icons-png.flaticon.com/512/906/906324.png",
+                    src: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
                     width: 32,
                     height: 32
                   },
                   {
-                    src: "https://cdn-icons-png.flaticon.com/512/5968/5968559.png",
+                    src: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg",
                     width: 32,
                     height: 32
                   },
                   {
-                    src: "https://cdn-icons-png.flaticon.com/512/919/919851.png",
+                    src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
                     width: 32,
                     height: 32
                   },
                   {
-                    src: "https://cdn-icons-png.flaticon.com/512/5968/5968657.png",
+                    src: "https://raw.githubusercontent.com/Seek4samurai/reactJS-portfolio/main/public/icons/Artstation.svg",
+                    width: 38,
+                    height: 32
+                  },
+                  {
+                    src: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+                    width: 32,
+                    height: 50
+                  },
+                  {
+                    src: "https://upload.wikimedia.org/wikipedia/commons/8/80/Atom_editor_logo.svg",
                     width: 32,
                     height: 32
                   },
                   {
-                    src: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
-                    width: 32,
-                    height: 32
+                    src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+                    width: 72,
+                    height: 48
                   },
                   {
-                    src: "https://cdn-icons-png.flaticon.com/512/1440/1440602.png",
+                    src: "https://upload.wikimedia.org/wikipedia/commons/0/01/Ethereum_logo_translucent.svg",
                     width: 32,
-                    height: 32
+                    height: 52
                   },
                   {
-                    src: "https://cdn-icons.flaticon.com/png/512/4494/premium/4494740.png?token=exp=1642361507~hmac=4c19fe4158f355087dbcb33c83fe26b3",
+                    src: "https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg",
                     width: 32,
-                    height: 32
+                    height: 52
                   },
                   {
-                    src: "https://cdn-icons.flaticon.com/png/512/3291/premium/3291667.png?token=exp=1642361507~hmac=9ce2fc10be4cea8017a1f0bd68f6eac7",
-                    width: 32,
-                    height: 32
-                  },
-                  {
-                    src: "https://cdn-icons-png.flaticon.com/512/5968/5968358.png",
-                    width: 32,
+                    src: "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
+                    width: 42,
                     height: 32
                   },
                   ]
