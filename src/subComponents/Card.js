@@ -59,12 +59,10 @@ const Footer = styled.footer`
 `
 
 const Git = styled(NavLink)`
-  color: inherit;
+  color: ${props => props.theme.text};
   text-decoration: ${props => props.theme.body};
   ${Box}:hover &{
-    &>*{
-      fill: ${props => props.theme.text};
-    }
+    color: ${props => props.theme.body};
   }
 `
 
