@@ -14,8 +14,6 @@ const Box = styled.div`
 const ParticleComponentAbout = (props) => {
   return (
     <Box>
-      {/* <Particles style={{ position: 'absolute', top: 0 }} params={props.theme === "light" ? configLight : configDark} >
-      </Particles> */}
       <Particles
         params={{
           background: {

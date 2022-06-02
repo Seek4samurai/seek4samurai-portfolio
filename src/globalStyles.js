@@ -13,8 +13,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     overflow-x: hidden;
     font-family: "Source Sans Pro", sans-serif;
+    background-color: #000;
   }
-
-`
+`;
 
 export default GlobalStyle;
