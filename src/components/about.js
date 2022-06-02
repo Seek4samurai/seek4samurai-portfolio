@@ -1,25 +1,21 @@
-import React from 'react'
-import styled, { keyframes, ThemeProvider } from 'styled-components'
-import { motion } from 'framer-motion'
-import { lightTheme } from './themes'
-import SocialIcons from '../subComponents/SocialIcons'
-import HomeButton from '../subComponents/HomeButton'
-import ParticleComponentAbout from '../Particles/ParticleComponentAbout'
-import img from '../assets/Images/cuteAnimal.png'
-import BackText from '../subComponents/BigText'
-
-// import ImgParticles from '../Particles/ImgParticles'
-// import Particles from 'react-particles-js'
+import React from "react";
+import styled, { keyframes, ThemeProvider } from "styled-components";
+import { motion } from "framer-motion";
+import { lightTheme } from "./themes";
+import SocialIcons from "../subComponents/SocialIcons";
+import HomeButton from "../subComponents/HomeButton";
+import ParticleComponentAbout from "../Particles/ParticleComponentAbout";
+import img from "../assets/Images/cuteAnimal.png";
+import BackText from "../subComponents/BigText";
 
 const Box = styled.div`
   position: relative;
   width: 100vw;
   height: 100vh;
   background-color: #000;
-  ${'' /* background-color: ${props => props.theme.body}; */}
 
   overflow: hidden;
-`
+`;
 
 const float = keyframes`
   0%
@@ -34,7 +30,7 @@ const float = keyframes`
   {
     transform: translateY(-15px);
   }
-`
+`;
 
 const disco = keyframes`
   0%
@@ -49,7 +45,7 @@ const disco = keyframes`
   {
     filter:hue-rotate(90deg);
   }
-`
+`;
 
 const Meh = styled.div`
   position: absolute;
@@ -57,16 +53,16 @@ const Meh = styled.div`
   right: 5%;
   width: 30vw;
   z-index: 99;
-  
+
   animation: ${float} 4s ease infinite;
 
-  img{
+  img {
     transform: rotate(15deg);
     width: 100%;
     height: auto;
     animation: ${disco} 1s ease infinite;
   }
-`
+`;
 
 const Main = styled.div`
   position: absolute;
@@ -78,24 +74,24 @@ const Main = styled.div`
   align-items: center;
   backdrop-filter: blur(4px);
 
-  color: ${props => props.theme.text};
-  font-family: 'poppins', sans-serif;
+  color: ${(props) => props.theme.text};
+  font-family: "poppins", sans-serif;
   font-size: calc(0.6rem + 0.8vw);
   line-height: 1.5;
   padding: 2rem;
   height: 50vh;
   width: 50vw;
 
-  border: 4px solid ${props => props.theme.text};
+  border: 4px solid ${(props) => props.theme.text};
   border-radius: 15px;
 
   z-index: 5;
 
-@media only screen and (max-width: 548px) {
-  left: 50%;
-  transform: translateX(-50%);
-}
-`
+  @media only screen and (max-width: 548px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+`;
 
 const AboutPage = () => {
   return (
@@ -103,26 +99,34 @@ const AboutPage = () => {
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        exit={{ scale: 0 }}>
+        exit={{ scale: 0 }}
+      >
         <SocialIcons></SocialIcons>
         <HomeButton></HomeButton>
         <Box>
           <Meh>
-            <img src={img} alt='Meh' />
+            <img src={img} alt="Meh" />
           </Meh>
           <Main>
-            Hi, nice to meet you👋🏾 <br></br><br></br>
-            I'm Gourav based in India 🌏 and I love doing web-development, and working on UI/UX designs.
-            Apart from these I really love to play with data-structures📅 and problem solving things😎, using C++ for those and Python🐍 for data studies.
-            <br></br><br></br>🚀I've also done some freelancing works since few years on different platforms.
-            <br></br><br></br>🚀I also like to do maths ✏️ on weekends.
+            Hi, nice to meet you👋🏾 <br></br>
+            I'm Gourav Singh Rawat, from India. 19 years old 🧔(with lil beard
+            for some reason) who keeps on looking for better opportunities 👩‍💻
+            and great minds 👥 to work with. I like to work on Web 🌎 & dApp 🔗
+            development and with cloud technologies ☁️ like Firebase, AWS and
+            Microsoft Azure.
+            <br></br>
+            <br></br>
+            🚀 I'm also a web3 & AI enthusiast.
+            <br></br>
+            <br></br>
+            🚀 I also like to do maths ✏️ on weekends.
           </Main>
         </Box>
         <BackText text="About" top="6%" right="20%"></BackText>
         <ParticleComponentAbout></ParticleComponentAbout>
       </motion.div>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;
