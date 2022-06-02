@@ -1,8 +1,8 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
-import { Github, Artstation, Dev, Behance, Dribble } from '../data/AllSvgs'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { Github, Artstation, Dev, Discord } from "../data/AllSvgs";
 
 const Icons = styled.div`
   position: fixed;
@@ -14,79 +14,71 @@ const Icons = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 
   z-index: 99;
 
-  svg{
-    color: ${props => props.theme.text};
+  svg {
+    color: ${(props) => props.theme.text};
     padding-right: 1rem;
   }
 
-  &>*:not(:last-child){
+  & > *:not(:last-child) {
     margin: 0.5rem 0.3rem;
   }
-`
+`;
 
 const Line = styled.div`
-  width: 28rem;
+  width: 18rem;
   height: 2px;
-  background-color: ${props => props.theme.text};
-`
+  background-color: ${(props) => props.theme.text};
+`;
 
 const AllSvgs = styled.span`
   display: flex;
   flex-direction: row;
-`
+`;
 
 const SocialIcons = () => {
   return (
     <Icons>
       <Line></Line>
       <AllSvgs>
-        <motion.div
-          whileHover={{ scale: 1.6 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <NavLink target="_blank" to={{ pathname: "https://www.github.com/Seek4samurai" }}>
-            <Github width={25} height={25} fill="#ffffff"></Github>
+        <motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.9 }}>
+          <NavLink
+            target="_blank"
+            to={{ pathname: "https://www.github.com/Seek4samurai" }}
+          >
+            <Github width={25} height={25}></Github>
           </NavLink>
         </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.6 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <NavLink target="_blank" to={{ pathname: "https://www.artstation.com/Seek4samurai" }}>
-            <Artstation width={25} height={25} fill="#ffffff"></Artstation>
+        <motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.9 }}>
+          <NavLink
+            target="_blank"
+            to={{ pathname: "https://www.artstation.com/Seek4samurai" }}
+          >
+            <Artstation width={25} height={25}></Artstation>
           </NavLink>
         </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.6 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <NavLink target="_blank" to={{ pathname: "https://www.dev.to/Seek4samurai" }}>
-            <Dev width={25} height={25} fill="#ffffff"></Dev>
+        <motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.9 }}>
+          <NavLink
+            target="_blank"
+            to={{ pathname: "https://www.dev.to/Seek4samurai" }}
+          >
+            <Dev width={25} height={25}></Dev>
           </NavLink>
         </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.6 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <NavLink target="_blank" to={{ pathname: "https://www.behance.net/seek4samurai" }}>
-            <Behance width={25} height={25} fill="#ffffff"></Behance>
-          </NavLink>
-        </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.6 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <NavLink target="_blank" to={{ pathname: "https://www.dribbble.com/seek4samurai" }}>
-            <Dribble width={25} height={25} fill="#ffffff"></Dribble>
+        <motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.9 }}>
+          <NavLink
+            target="_blank"
+            to={{ pathname: "https://discord.gg/fj8BVc2ft7" }}
+          >
+            <Discord width={25} height={25}></Discord>
           </NavLink>
         </motion.div>
       </AllSvgs>
     </Icons>
-  )
-}
+  );
+};
 
-export default SocialIcons
+export default SocialIcons;

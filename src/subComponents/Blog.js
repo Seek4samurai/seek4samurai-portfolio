@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { LinkOpen } from "../data/AllSvgs";
 
 const BLOG = styled.a`
   position: absolute;
@@ -25,8 +26,17 @@ const BLOG = styled.a`
 const Blog = () => {
   return (
     <BLOG href="https://dev.to/seek4samurai" target="_blank">
-      <motion.h2 whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.9 }}>
+      <motion.h2
+        style={{ display: "flex", alignItems: "center" }}
+        whileHover={{ scale: 1.6 }}
+        whileTap={{ scale: 0.9 }}
+      >
         Blogs
+        <LinkOpen
+          style={{ paddingLeft: "0.5rem" }}
+          width={20}
+          height={20}
+        ></LinkOpen>
       </motion.h2>
     </BLOG>
   );
