@@ -25,9 +25,9 @@ const Main = styled.div`
   justify-content: space-between;
 
   color: ${(props) => props.theme.body};
-  border: 2px solid ${(props) => props.theme.text};
-  border-radius: 10px;
-  background-color: ${(props) => props.theme.body};
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e6d4da, #fffbff);
+  box-shadow: 20px 20px 60px #d9c8ce, -20px -20px 60px #ffffff;
 
   padding: 2rem;
   width: 30vw;

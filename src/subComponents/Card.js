@@ -8,7 +8,6 @@ const Box = styled.li`
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
 
   width: 16rem;
@@ -17,8 +16,8 @@ const Box = styled.li`
   margin-right: 5rem;
 
   border-radius: 50px;
-  background: #f7cfdb;
-  box-shadow: 20px 20px 60px #d2b0ba, -20px -20px 60px #ffeefc;
+  background: linear-gradient(145deg, #e6d4da, #fffbff);
+  box-shadow: 20px 20px 60px #d9c8ce, -20px -20px 60px #ffffff;
 
   @media (max-width: 1200px) {
     margin: 2rem;

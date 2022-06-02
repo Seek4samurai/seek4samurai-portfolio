@@ -13,7 +13,10 @@ const Box = styled(motion.div)`
 
   display: flex;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e6d8db, #ffffff);
+  box-shadow: 5px 5px 10px #4c4c4c, -5px -5px 10px #ffffff;
 
   z-index: 3;
   border-radius: 10px;

@@ -100,8 +100,6 @@ const Center = styled.button`
 
 const DarkDiv = styled.div`
   position: absolute;
-  background-color: #000000;
-  border-radius: 8px;
   top: 10%;
   bottom: 0%;
   right: 50%;
@@ -110,6 +108,10 @@ const DarkDiv = styled.div`
   width: ${(props) => (props.click ? "70%" : "0%")};
   height: ${(props) => (props.click ? "80%" : "80%")};
   transition: width 1s ease;
+
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e6c5c5, #ffeaea);
+  box-shadow: 5px 5px 10px #d9baba, -5px -5px 10px #fffcfc;
 
   @media only screen and (max-width: 670px) {
     width: ${(props) => (props.click ? "55vw" : "0%")}!important;

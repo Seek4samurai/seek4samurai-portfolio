@@ -82,10 +82,11 @@ const Main = styled.div`
   height: 50vh;
   width: 50vw;
 
-  border: 4px solid ${(props) => props.theme.text};
-  border-radius: 15px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e6c5c5, #ffeaea);
+  box-shadow: 5px 5px 10px #d9baba, -5px -5px 10px #fffcfc;
 
-  z-index: 5;
+  z-index: 3;
 
   @media only screen and (max-width: 548px) {
     left: 50%;
