@@ -13,12 +13,13 @@ const Box = styled.div`
   width: 100vw;
   height: 100vh;
   background: ${(props) => props.theme.body};
+  overflow: scroll;
+  overflow-x: hidden;
 `;
 
 const Main = styled.ul`
   position: absolute;
   top: 26%;
-  height: max-content;
   z-index: 7;
 
   display: flex;
@@ -38,9 +39,10 @@ const WorkPage = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        exit={{ scale: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.2 }}
+        exit={{ opacity: 0 }}
       >
         <SocialIcons></SocialIcons>
         <HomeButton></HomeButton>
