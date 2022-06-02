@@ -10,7 +10,6 @@ import Blog from '../subComponents/Blog'
 import Projects from '../subComponents/Projects'
 import About from '../subComponents/About.js'
 import Skills from '../subComponents/Skills'
-// import Center from '../subComponents/Center'
 import Intro from './Intro'
 import { motion } from 'framer-motion'
 

@@ -301,29 +301,6 @@ const ParticleComponentAbout = (props) => {
             shape: "square",
             startCount: 0,
             size: { mode: "percent", height: 0, width: 0 },
-            particles: {
-              shape: {
-                type: "images",
-                options: {
-                  images: {
-                    src: 'https://github.com/Seek4samurai/reactJS-portfolio/blob/main/src/assets/Images/Doggo.png?raw=true',
-                    width: 291,
-                    height: 489
-                  }
-                }
-              },
-              size: { value: 100 },
-              move: {
-                speed: 5,
-                outModes: { default: "none", right: "destroy" },
-                straight: true
-              },
-              zIndex: { value: 0 },
-              rotate: {
-                value: { min: 0, max: 360 },
-                animation: { enable: true, speed: 20, sync: true }
-              }
-            },
             position: { x: -5, y: 15 }
           }
         }} />
