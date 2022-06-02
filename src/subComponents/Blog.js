@@ -5,7 +5,7 @@ import { LinkOpen } from "../data/AllSvgs";
 
 const BLOG = styled.a`
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 2rem;
   color: ${(props) => props.theme.text};
   text-decoration: none;
@@ -17,7 +17,7 @@ const BLOG = styled.a`
   font-weight: bold;
 
   @media only screen and (max-width: 670px) {
-    top: 35%;
+    top: 45%;
     left: 0.5rem;
     font-size: 0.8rem;
   }
