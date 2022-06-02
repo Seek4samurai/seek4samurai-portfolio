@@ -1,87 +1,69 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
-import { Github } from '../data/AllSvgs';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+import { Github } from "../data/AllSvgs";
 
 const Box = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  background-color: ${props => props.theme.body};
-  color: ${props => props.theme.text};
+
+  background-color: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.text};
 
   width: 16rem;
-  height: 50vh;
+  height: 400px;
   padding: 1.5rem 2rem;
-  margin-right: 5rem; 
+  margin-right: 5rem;
 
-  border-radius: 15px;
-  border: 2px solid ${props => props.theme.text};
-
-  transition: all 0.2s ease;
-  &:hover{
-  color: ${props => props.theme.body};
-  background-color: ${props => props.theme.text};
-  border: 2px solid ${props => props.theme.body};
-  }
-`
+  border-radius: 50px;
+  background: #f7cfdb;
+  box-shadow: 20px 20px 60px #d2b0ba, -20px -20px 60px #ffeefc;
+`;
 
 const Title = styled.h2`
-  font-size: calc(1em + 0.5vw);
-`
+  font-size: 1.4rem;
+`;
 const Description = styled.h2`
-  font-size: calc(0.8em + 0.3vw);
-  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
   font-weight: 500;
-`
+`;
 
 const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  border-top: 2px solid ${props => props.theme.text};
+  border-top: 2px solid ${(props) => props.theme.text};
   padding-top: 0.5rem;
-
-  ${Box}:hover &{
-  border-top: 2px solid ${props => props.theme.body};
-  }
-`
+`;
 
 const Tag = styled.span`
-  font-size: calc(0.8em + 0.3vw);
+  font-size: 1rem;
   margin-right: 1rem;
-`
+`;
 
 const Footer = styled.footer`
-  display:flex;
+  display: flex;
   justify-content: space-between;
-`
+`;
 
 const Git = styled(NavLink)`
-  color: ${props => props.theme.text};
-  text-decoration: ${props => props.theme.body};
-  ${Box}:hover &{
-    color: ${props => props.theme.body};
-  }
-`
+  color: ${(props) => props.theme.text};
+  text-decoration: ${(props) => props.theme.body};
+`;
 
 const Card = (props) => {
   const { id, name, description, tags, github } = props.data;
 
   return (
     <Box key={id}>
-      <Title>
-        🚀{name}
-      </Title>
-      <Description>
-        🌏{description}
-      </Description>
-      <Tags>{
-        tags.map((tag, id) => {
-          return <Tag key={id}>#{tag}</Tag>
-        })
-      }
+      <Title>🚀{name}</Title>
+      <Description>🌏{description}</Description>
+      <Tags>
+        {tags.map((tag, id) => {
+          return <Tag key={id}>#{tag}</Tag>;
+        })}
       </Tags>
       <Footer>
         <Git to={{ pathname: `${github}` }} target="_blank">
@@ -89,7 +71,7 @@ const Card = (props) => {
         </Git>
       </Footer>
     </Box>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
