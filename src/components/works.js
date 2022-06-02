@@ -30,9 +30,9 @@ const Col = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100vw;
-  padding: 0 2rem;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 `;
 
 const WorkPage = () => {

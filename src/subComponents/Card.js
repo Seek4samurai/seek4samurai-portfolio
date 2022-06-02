@@ -19,6 +19,10 @@ const Box = styled.li`
   border-radius: 50px;
   background: #f7cfdb;
   box-shadow: 20px 20px 60px #d2b0ba, -20px -20px 60px #ffeefc;
+
+  @media (max-width: 1200px) {
+    margin: 2rem;
+  }
 `;
 
 const Title = styled.h2`
