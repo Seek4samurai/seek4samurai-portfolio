@@ -115,7 +115,9 @@ const DarkDiv = styled.div`
   box-shadow: 5px 5px 10px #d9baba, -5px -5px 10px #fffcfc;
 
   @media only screen and (max-width: 670px) {
-    width: ${(props) => (props.click ? "55vw" : "0%")}!important;
+    top: 0;
+    height: 100%;
+    width: ${(props) => (props.click ? "100vw" : "0%")}!important;
   }
 `;
 
