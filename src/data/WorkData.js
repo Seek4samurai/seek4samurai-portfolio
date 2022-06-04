@@ -25,4 +25,22 @@ export const Work = [
 
     github: "https://github.com/Seek4samurai/reactJS-portfolio",
   },
+  {
+    id: 4,
+    name: "Noir",
+    description:
+      "Application build on Next.js and Firebase. User Authentication and realtime chatting with this web based application.",
+    tags: ["next.js", "firebase"],
+
+    github: "https://github.com/Seek4samurai/noir",
+  },
+  {
+    id: 5,
+    name: "Cursed detector",
+    description:
+      "Another web based application :) that allows you to upload audios and it'll let you know if there are any cursed words.",
+    tags: ["next.js", "firebase", "deepgram"],
+
+    github: "https://github.com/Seek4samurai/curseddetector",
+  },
 ];

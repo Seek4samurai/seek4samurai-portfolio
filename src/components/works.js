@@ -19,7 +19,9 @@ const Box = styled.div`
 
 const Main = styled.ul`
   position: absolute;
-  top: 26%;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 7;
 
   display: flex;
@@ -31,7 +33,7 @@ const Col = styled.div`
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 80vw;
   margin: 5rem 0;
 `;
 
@@ -48,11 +50,6 @@ const WorkPage = () => {
         <HomeButton></HomeButton>
         <Box>
           <Main>
-            <Col>
-              {Work.map((data) => (
-                <Card key={data.id} data={data}></Card>
-              ))}
-            </Col>
             <Col>
               {Work.map((data) => (
                 <Card key={data.id} data={data}></Card>

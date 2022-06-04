@@ -13,7 +13,7 @@ const Box = styled.li`
   width: 16rem;
   height: 400px;
   padding: 1.5rem 2rem;
-  margin-right: 5rem;
+  margin: 5rem;
 
   border-radius: 50px;
   background: linear-gradient(145deg, #e6d4da, #fffbff);
