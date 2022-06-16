@@ -61,6 +61,8 @@ const Meh = styled.div`
     width: 100%;
     height: auto;
     animation: ${disco} 1s ease infinite;
+    -webkit-user-drag: none;
+    user-select: none;
   }
 `;
 
