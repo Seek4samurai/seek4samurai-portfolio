@@ -6,7 +6,6 @@ import SocialIcons from "../subComponents/SocialIcons";
 import HomeButton from "../subComponents/HomeButton";
 import img from "../assets/Images/cuteAnimal.png";
 import BackText from "../subComponents/BigText";
-import UserData from "../subComponents/UserData";
 
 const Box = styled.div`
   position: relative;
@@ -111,7 +110,6 @@ const AboutPage = () => {
       >
         <SocialIcons></SocialIcons>
         <HomeButton></HomeButton>
-        <UserData></UserData>
         <Box>
           <Meh>
             <img src={img} alt="Meh" />

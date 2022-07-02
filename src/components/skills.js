@@ -6,7 +6,6 @@ import SocialIcons from "../subComponents/SocialIcons";
 import HomeButton from "../subComponents/HomeButton";
 import { motion } from "framer-motion";
 import BackText from "../subComponents/BigText";
-import UserData from "../subComponents/UserData";
 
 const Box = styled.div`
   position: relative;
@@ -127,7 +126,6 @@ const Skills = () => {
       >
         <SocialIcons></SocialIcons>
         <HomeButton theme={"light"}></HomeButton>
-        <UserData></UserData>
         <Box>
           <Main>
             <Title>

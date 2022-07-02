@@ -6,7 +6,6 @@ import HomeButton from "../subComponents/HomeButton";
 import { motion } from "framer-motion";
 import BackText from "../subComponents/BigText";
 import MorbinTime from "../assets/Images/MorbinTime.jpeg";
-import UserData from "../subComponents/UserData";
 
 const Box = styled.div`
   position: relative;
@@ -36,7 +35,6 @@ const Morbin = () => {
       >
         <SocialIcons></SocialIcons>
         <HomeButton theme={"light"}></HomeButton>
-        <UserData></UserData>
         <Box>
           <Container>
             <img src={MorbinTime} alt="MorbinTime"></img>
