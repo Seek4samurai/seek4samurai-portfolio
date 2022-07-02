@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Github, Artstation, Dev, Discord } from "../data/AllSvgs";
 
 const Icons = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 1rem;
   left: 0;
   right: 0;

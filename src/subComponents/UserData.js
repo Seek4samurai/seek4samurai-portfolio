@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../firebase-config";
+import { auth, provider } from "../firebase-config";
 
 const Status = styled.div`
   position: absolute;
@@ -15,10 +15,7 @@ const Status = styled.div`
   font-weight: bold;
 
   @media only screen and (max-width: 670px) {
-    top: 78%;
-    left: 50%;
-    transform: translateX(-50%);
-
+    left: 0.5rem;
     font-size: 0.8rem;
     text-align: center;
   }
@@ -27,6 +24,16 @@ const Status = styled.div`
 const Stat = styled.h2`
   font-weight: bold;
   letter-spacing: -2px;
+`;
+
+const LogIn = styled.p`
+  text-decoration: underline;
+  color: ${(props) => props.theme.text};
+
+  cursor: pointer;
+
+  width: fit-content;
+  border: none;
 `;
 
 const LogOut = styled.p`
@@ -38,6 +45,14 @@ const LogOut = styled.p`
 const UserData = () => {
   const [user, loading] = useAuthState(auth);
 
+  const signIn = () => {
+    auth.signInWithPopup(provider).catch(alert);
+  };
+
+  const handleLogOut = () => {
+    auth.signOut();
+  };
+
   if (loading)
     return (
       <Status>
@@ -48,8 +63,15 @@ const UserData = () => {
   return (
     <Status>
       <Stat>Logged in as:</Stat>
-      {user ? <div>{user?.email}</div> : <div>None</div>}
-      {user ? <LogOut>Log Out</LogOut> : null}
+      <br></br>
+      {user ? (
+        <div>{user?.displayName}</div>
+      ) : (
+        <LogIn onClick={signIn} variant="outlined">
+          Log in
+        </LogIn>
+      )}
+      {user ? <LogOut onClick={handleLogOut}>Log Out</LogOut> : null}
     </Status>
   );
 };
