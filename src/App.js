@@ -1,9 +1,10 @@
 import { AnimatePresence } from "framer-motion";
-import { Route, Switch, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router";
 import { ThemeProvider } from "styled-components";
 import About from "./components/about";
 import Main from "./components/main";
 import Morbin from "./components/morbin";
+import SayHi from "./components/sayHi";
 import Skills from "./components/skills";
 import { lightTheme } from "./components/themes";
 import Works from "./components/works";
@@ -18,13 +19,14 @@ function App() {
       <ThemeProvider theme={lightTheme}>
         {/* Routing here */}
         <AnimatePresence exitBeforeEnter>
-          <Switch location={location} key={location.pathname}>
-            <Route exact path="/" component={Main}></Route>
-            <Route exact path="/about" component={About}></Route>
-            <Route exact path="/works" component={Works}></Route>
-            <Route exact path="/skills" component={Skills}></Route>
-            <Route exact path="/morbin-time" component={Morbin}></Route>
-          </Switch>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Main></Main>}></Route>
+            <Route path="/about" element={<About></About>}></Route>
+            <Route path="/works" element={<Works></Works>}></Route>
+            <Route path="/skills" element={<Skills></Skills>}></Route>
+            <Route path="/morbin-time" element={<Morbin></Morbin>}></Route>
+            <Route path="/sayHi" element={<SayHi></SayHi>}></Route>
+          </Routes>
         </AnimatePresence>
         {/* Routing here */}
       </ThemeProvider>

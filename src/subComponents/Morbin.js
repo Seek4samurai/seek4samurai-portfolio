@@ -1,7 +1,7 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 const MorbinTime = styled(NavLink)`
   position: absolute;
@@ -22,14 +22,19 @@ const MorbinTime = styled(NavLink)`
   }
 `;
 
-const Skills = () => {
+const Morbin = () => {
   return (
     <MorbinTime to="/morbin-time">
-      <motion.h2 whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }}>
+      <motion.h2
+        whileHover={{ scale: 1.2 }}
+        whileTap={{
+          scale: 0.9,
+        }}
+      >
         Wanna see something Empty?
       </motion.h2>
     </MorbinTime>
   );
 };
 
-export default Skills;
+export default Morbin;

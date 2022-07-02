@@ -7,6 +7,7 @@ import { lightTheme } from "./themes";
 import { Work } from "../data/WorkData";
 import Card from "../subComponents/Card";
 import BackText from "../subComponents/BigText";
+import UserData from "../subComponents/UserData";
 
 const Box = styled.div`
   position: relative;
@@ -48,6 +49,7 @@ const WorkPage = () => {
       >
         <SocialIcons></SocialIcons>
         <HomeButton></HomeButton>
+        <UserData></UserData>
         <Box>
           <Main>
             <Col>

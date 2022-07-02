@@ -4,15 +4,19 @@ import { motion } from "framer-motion";
 import { lightTheme } from "./themes";
 import SocialIcons from "../subComponents/SocialIcons";
 import HomeButton from "../subComponents/HomeButton";
-import ParticleComponentAbout from "../Particles/ParticleComponentAbout";
 import img from "../assets/Images/cuteAnimal.png";
 import BackText from "../subComponents/BigText";
+import UserData from "../subComponents/UserData";
 
 const Box = styled.div`
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+
+  background-color: ${(props) => props.theme.body};
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
   overflow: hidden;
 `;
@@ -88,7 +92,7 @@ const Main = styled.div`
   background: linear-gradient(145deg, #e6c5c5, #ffeaea);
   box-shadow: 5px 5px 10px #d9baba, -5px -5px 10px #fffcfc;
 
-  z-index: 3;
+  z-index: 5;
 
   @media only screen and (max-width: 548px) {
     left: 50%;
@@ -107,27 +111,27 @@ const AboutPage = () => {
       >
         <SocialIcons></SocialIcons>
         <HomeButton></HomeButton>
+        <UserData></UserData>
         <Box>
           <Meh>
             <img src={img} alt="Meh" />
           </Meh>
           <Main>
             Hi, nice to meet you👋🏾 <br></br>
-            I'm Gourav Singh Rawat, from India. 19 years old 🧔(with lil beard
-            for some reason) who keeps on looking for better opportunities 👩‍💻
-            and great minds 👥 to work with. I like to work on Web 🌎 & dApp 🔗
-            development and with cloud technologies ☁️ like Firebase, AWS and
-            Microsoft Azure.
+            I'm Gourav Singh Rawat, from India. 20 years old kid 🧔(with lil
+            beard for some reason) who keeps on looking for better opportunities
+            👩‍💻 and great minds 👥 to work with. I like to work on
+            Ethereum/Solana 💵, Web 🌎, dApp 🔗 development and with cloud
+            technologies ☁️ like Firebase, Appwrite, AWS and Microsoft Azure.
             <br></br>
             <br></br>
-            🚀 I'm also a web3 & AI enthusiast.
+            🚀 I'm a web3 & AI enthusiast.
             <br></br>
             <br></br>
             🚀 I also like to do maths ✏️ on weekends.
           </Main>
         </Box>
-        <BackText text="About" top="6%" right="20%"></BackText>
-        <ParticleComponentAbout></ParticleComponentAbout>
+        <BackText text="About" top="3%" right="20%"></BackText>
       </motion.div>
     </ThemeProvider>
   );

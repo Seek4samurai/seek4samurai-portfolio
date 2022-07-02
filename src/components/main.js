@@ -13,6 +13,7 @@ import Skills from "../subComponents/Skills";
 import Intro from "./Intro";
 import Morbin from "../subComponents/Morbin";
 import { motion } from "framer-motion";
+import UserData from "../subComponents/UserData";
 
 const MainContainer = styled.div`
   position: relative;
@@ -149,6 +150,7 @@ const Main = () => {
           <About></About>
           <Skills></Skills>
           <Morbin></Morbin>
+          <UserData></UserData>
         </Container>
         {click ? <Intro click={click}></Intro> : null}
       </MainContainer>

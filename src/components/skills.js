@@ -4,9 +4,9 @@ import { lightTheme } from "./themes";
 import { Palette, WebDev } from "../data/AllSvgs";
 import SocialIcons from "../subComponents/SocialIcons";
 import HomeButton from "../subComponents/HomeButton";
-import ParticleComponent from "../Particles/ParticleComponent";
 import { motion } from "framer-motion";
 import BackText from "../subComponents/BigText";
+import UserData from "../subComponents/UserData";
 
 const Box = styled.div`
   position: relative;
@@ -127,6 +127,7 @@ const Skills = () => {
       >
         <SocialIcons></SocialIcons>
         <HomeButton theme={"light"}></HomeButton>
+        <UserData></UserData>
         <Box>
           <Main>
             <Title>
@@ -175,7 +176,6 @@ const Skills = () => {
           </Main>
           <BackText text="Skills" top="3%" right="25%"></BackText>
         </Box>
-        <ParticleComponent theme="light"></ParticleComponent>
       </motion.div>
     </ThemeProvider>
   );
