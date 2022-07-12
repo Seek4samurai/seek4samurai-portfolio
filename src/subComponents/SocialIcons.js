@@ -1,8 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { Github, Artstation, Dev, Discord } from "../data/AllSvgs";
+import { Github, Artstation, Discord, LinkedIn } from "../data/AllSvgs";
 
 const Icons = styled.div`
   position: absolute;
@@ -45,36 +44,40 @@ const SocialIcons = () => {
       <Line></Line>
       <AllSvgs>
         <motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.9 }}>
-          <NavLink
+          <a
             target="_blank"
-            to={{ pathname: "https://www.github.com/Seek4samurai" }}
+            rel="noreferrer"
+            href="https://www.github.com/Seek4samurai"
           >
             <Github width={25} height={25}></Github>
-          </NavLink>
+          </a>
         </motion.div>
         <motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.9 }}>
-          <NavLink
+          <a
             target="_blank"
-            to={{ pathname: "https://www.artstation.com/Seek4samurai" }}
+            rel="noreferrer"
+            href="https://www.artstation.com/Seek4samurai"
           >
             <Artstation width={25} height={25}></Artstation>
-          </NavLink>
+          </a>
         </motion.div>
         <motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.9 }}>
-          <NavLink
+          <a
             target="_blank"
-            to={{ pathname: "https://www.dev.to/Seek4samurai" }}
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/seek4samurai/"
           >
-            <Dev width={25} height={25}></Dev>
-          </NavLink>
+            <LinkedIn width={25} height={25}></LinkedIn>
+          </a>
         </motion.div>
         <motion.div whileHover={{ scale: 1.6 }} whileTap={{ scale: 0.9 }}>
-          <NavLink
+          <a
             target="_blank"
-            to={{ pathname: "https://discord.gg/fj8BVc2ft7" }}
+            rel="noreferrer"
+            href="https://discord.gg/fj8BVc2ft7"
           >
             <Discord width={25} height={25}></Discord>
-          </NavLink>
+          </a>
         </motion.div>
       </AllSvgs>
     </Icons>
