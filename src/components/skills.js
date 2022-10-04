@@ -132,19 +132,20 @@ const Skills = () => {
               <Palette width={40} height={40} /> UI/UX Designer
             </Title>
             <Description>
-              Simple, Sober and Sexy designs that speak and stands out.
+              Simple, Satisfying and Sexy designs that speak and stands out.
             </Description>
             <Description>
               <strong>Prefers Designing</strong>
               <ul>
-                <li>Web/mobile designs</li>
-                <li>Dashboards</li>
+                <li>Web/mobile UI</li>
+                <li>Admin dashboards</li>
               </ul>
             </Description>
             <Description>
               <strong>TOOLS</strong>
               <ul>
                 <li>Figma</li>
+                <li>Illustrator</li>
               </ul>
             </Description>
           </Main>
@@ -153,21 +154,21 @@ const Skills = () => {
               <WebDev width={40} height={40} /> Developer
             </Title>
             <Description>
-              Making UIs and developing them to real. Web-application
-              development, writing smart contracts.
+              Making UIs and developing them to real. Web/dApp-development,
+              security ops & smart contracts.
             </Description>
             <Description>
               <strong>Prefers to work with</strong>
               <p>
-                Next.js, C++/Python/Solidity, AWS/Azure/Digital Ocean,
-                Firebase/Appwrite, Ethereum and more!
+                React/ Next.js/ Django/ DRF, Microservices architecture, C++/
+                Python/ Solidity, AWS/ Azure/ Digital Ocean, Firebase/ Appwrite,
+                Ethereum, Moralis and more!
               </p>
             </Description>
             <Description>
               <strong>TOOLS</strong>
               <ul>
-                <li>Github</li>
-                <li>AWS CLI</li>
+                <li>Git & Github</li>
                 <li>Docker</li>
               </ul>
             </Description>

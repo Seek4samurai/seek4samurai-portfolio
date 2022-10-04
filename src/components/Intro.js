@@ -87,7 +87,7 @@ const Intro = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2 }}
           >
-            I love making simple yet effective applications and designs!
+            In love with developing fast, scalable & secured applications!
             <br></br>
             <a
               style={{ fontSize: "calc(0.5rem + 1vw)", textDecoration: "none" }}
