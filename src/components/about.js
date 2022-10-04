@@ -116,17 +116,17 @@ const AboutPage = () => {
           </Meh>
           <Main>
             Hi, nice to meet you👋🏾 <br></br>
-            I'm Gourav Singh Rawat, from India. 20 years old kid 🧔(with lil
-            beard for some reason) who keeps on looking for better opportunities
-            👩‍💻 and great minds 👥 to work with. I like to work on
-            Ethereum/Solana 💵, Web 🌎, dApp 🔗 development and with cloud
+            I'm Gourav Singh Rawat, from India 🇮🇳. 20 years old kid 🧔(with lil
+            beard & golden earrings for some reason) who keeps on looking for
+            great minds 👥 to work with. I like to work on Web 🌎, dApp 🔗
+            development, security Ops and ML integrations 🤖 & cloud
             technologies ☁️ like Firebase, Appwrite, AWS and Microsoft Azure.
             <br></br>
             <br></br>
-            🚀 I'm a web3 & AI enthusiast.
+            🚀 Talk about Web3 & AI.
             <br></br>
             <br></br>
-            🚀 I also like to do maths ✏️ on weekends.
+            🚀 Graphics, UI/UX & maybe a lil of Maths.
           </Main>
         </Box>
         <BackText text="About" top="3%" right="20%"></BackText>
