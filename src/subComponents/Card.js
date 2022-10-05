@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Github } from "../data/AllSvgs";
 
@@ -51,7 +50,7 @@ const Footer = styled.footer`
   justify-content: space-between;
 `;
 
-const Git = styled(NavLink)`
+const Git = styled.a`
   color: ${(props) => props.theme.text};
   text-decoration: ${(props) => props.theme.body};
 `;
@@ -69,7 +68,7 @@ const Card = (props) => {
         })}
       </Tags>
       <Footer>
-        <Git to={{ pathname: `${github}` }} target="_blank">
+        <Git href={github} target="_blank">
           <Github width={30} height={30}></Github>
         </Git>
       </Footer>

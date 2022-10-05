@@ -3,12 +3,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const MorbinTime = styled(NavLink)`
+const TeamComp = styled(NavLink)`
   position: absolute;
-  bottom: 50%;
+  top: 90%;
+  right: 2rem;
   transform: translateY(50%);
   right: 2%;
-  writing-mode: vertical-rl;
   color: ${(props) => props.theme.text};
   text-decoration: none;
   z-index: 99;
@@ -22,19 +22,19 @@ const MorbinTime = styled(NavLink)`
   }
 `;
 
-const Morbin = () => {
+const Team = () => {
   return (
-    <MorbinTime to="/morbin-time">
+    <TeamComp to="/ourteam">
       <motion.h2
         whileHover={{ scale: 1.2 }}
         whileTap={{
           scale: 0.9,
         }}
       >
-        Wanna see something Empty?
+        Meet our Team!
       </motion.h2>
-    </MorbinTime>
+    </TeamComp>
   );
 };
 
-export default Morbin;
+export default Team;

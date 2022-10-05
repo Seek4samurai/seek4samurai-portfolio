@@ -11,7 +11,7 @@ import Projects from "../subComponents/Projects";
 import About from "../subComponents/About.js";
 import Skills from "../subComponents/Skills";
 import Intro from "./Intro";
-import Morbin from "../subComponents/Morbin";
+import Team from "../subComponents/Team";
 import { motion } from "framer-motion";
 import UserData from "../subComponents/UserData";
 
@@ -149,7 +149,7 @@ const Main = () => {
           <Blog></Blog>
           <About></About>
           <Skills></Skills>
-          <Morbin></Morbin>
+          <Team></Team>
           <UserData></UserData>
         </Container>
         {click ? <Intro click={click}></Intro> : null}

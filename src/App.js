@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router";
 import { ThemeProvider } from "styled-components";
 import About from "./components/about";
 import Main from "./components/main";
-import Morbin from "./components/morbin";
+import Team from "./components/team";
 import SayHi from "./components/sayHi";
 import Skills from "./components/skills";
 import { lightTheme } from "./components/themes";
@@ -24,7 +24,7 @@ function App() {
             <Route path="/about" element={<About></About>}></Route>
             <Route path="/works" element={<Works></Works>}></Route>
             <Route path="/skills" element={<Skills></Skills>}></Route>
-            <Route path="/morbin-time" element={<Morbin></Morbin>}></Route>
+            <Route path="/ourteam" element={<Team></Team>}></Route>
             <Route path="/sayHi" element={<SayHi></SayHi>}></Route>
           </Routes>
         </AnimatePresence>
